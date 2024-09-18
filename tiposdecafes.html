@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cafe2.ico" type="image/x-icon">
+    <title>Café Paraguayo</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+        <h1>Café Paraguayo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active"href="tiposdecafes.html">Tipos de Cafés</a></li>
+                <li><a href="delicatense.html">Delicatense</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2> Tipos de cafés</h2>
+    <hr>
+    <div>
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(207, 207, 207);">
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th></th>
+            <th>Pais de origen</th>
+            <th>Precio</th>
+            <th>Caracteristica</th>
+
+            <tr>
+                <td>Café Arabica</td>
+                <td>Etiopía</td>
+                <td>12€/Kg</td>
+                <td>Suave, con notas afrutadas y menor acidez.</td>
+            </tr>
+            <tr>
+                <td>Café Robusta</td>
+                <td>Uganda</td>
+                <td>8€/kg</td>
+                <td>Sabor mas fuerte, mayor contenido de cafeína.</td>
+            </tr>
+            <tr>
+                <td>Café Blue Mountain</td>
+                <td>Jamaica</td>
+                <td>70€/Kg</td>
+                <td>Suave y equilibrado, con ligera acidez y sabor dulce</td>
+            </tr>
+            <tr>
+                <td>Café Geisha</td>
+                <td>Etiopía</td>
+                <td>250€/Kg</td>
+                <td>Producido a partir de granos ingeridos y excretados por civetas, <br> tiene un sabor suave y menos ácido</td>
+            </tr>
+            <tr></tr>
+                <td>Kopi Luwak</td>
+                <td>Indonesia</td>
+                <td>100€/Kg</td>
+                <td>Muy aromático, con notas florales y afrutadas, considerado uno de los mejores cafés del mundo.</td>
+            </tr>
+            <tr>
+                <td>Café Kona</td>
+                <td>Hawái, Estados Unidos</td>
+                <td>50€/Kg</td>
+                <td>Sabor suave, afrutado, con una acidez moderada y un cuerpo medio.</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <p>Derechos reservados &copy;2024</p>
+    </footer>
+</body>

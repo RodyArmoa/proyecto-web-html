@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cafe2.ico" type="image/x-icon">
+    <title>Café Paraguayo</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover, .active {
+            background-color: #5A738E;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .container p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .container img {
+            max-width: 50%; /* No ocupar todo el ancho */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image {
+            float: right;
+            margin-left: 20px;
+            width: 40%; /* Ajusta el ancho al 40% */
+        }
+
+        .image2 {
+            float: left;
+            margin-right: 20px;
+            width: 40%; /* Ajusta el ancho al 40% */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .image, .image2 {
+                float: none;
+                width: 100%; /* En pantallas pequeñas, ocupar todo el ancho */
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Café Paraguayo</h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="tiposdecafes.html">Tipos de Cafés</a></li>
+                <li><a href="delicatense.html">Delicatense</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Cafetería con estilo paraguayo</h2>
+        <hr>
+
+        <article>
+            <h3>El origen de la Cafetería</h3>
+            <img class="image" src="/assets/imgs/imagen.jpg" alt="Cafetería uno">
+            <p>
+                Una mañana en Paraguay… <br>
+                Imagina una fría mañana de invierno en el corazón de Paraguay, cuando el sol apenas 
+                asoma entre la neblina y el viento fresco acaricia las calles de tierra roja. En las cocinas de los hogares, 
+                las brasas ya crepitan mientras se prepara el mate para empezar el día. Sin embargo, 
+                en un rincón especial, nace algo diferente: el aroma profundo y reconfortante del café 
+                recién molido llena el aire, mezclándose con el olor a chipa que acaba de salir del horno, 
+                crujiente y dorada. Este no es un café cualquiera, es un viaje a los campos del sur de América,
+                donde cada grano ha sido cultivado con esmero en las fértiles tierras que se extienden a lo largo de la región.
+            </p>
+
+            <img class="image2" src="assets/imgs/imagen_2.jpg" alt="Cafetería dos">
+            <p>
+                Así es como nuestra cafetería cobra vida, inspirada por esas mañanas paraguayas llenas de tradición, 
+                calor humano y sabores auténticos. Cada taza de café que servimos no solo es una bebida; es una invitación 
+                a recorrer la historia de los pueblos que cultivaron el primer grano, de las manos que lo cuidaron y de las tierras que lo vieron crecer.
+            </p>
+
+            <img class="image" src="assets/imgs/imagen_3.jpg" alt="Cafetería tres">
+            <p>
+                Nuestra cafetería no es simplemente un lugar donde venir a tomar algo, 
+                es un espacio donde se celebra la herencia cultural y culinaria de Paraguay, 
+                donde cada bocado y cada sorbo te invita a descubrir un pedacito de ese país vibrante y lleno de vida. 
+            </p>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy;2024</p>
+    </footer>
+
+</body>
+</html>
